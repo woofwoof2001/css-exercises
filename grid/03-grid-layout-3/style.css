@@ -17,15 +17,25 @@
 
 .header {
   background-color: #393f4d;
+  display: grid;
+  grid-template: 1fr/1fr 1fr 2fr;
+
 }
 
 .logo {
+  text-align: center;
 }
 
 .menu {
+  grid-column-start: 3;
+  grid-column-end: 6;
 }
 
 .menu ul {
+  display: grid;
+  grid-template: 1fr/1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  grid-gap: 10px;
 }
 
 .menu ul,
@@ -35,6 +45,7 @@
 
 .sidebar {
   background-color: #FF7755;
+
 }
 
 .sidebar .photo {
